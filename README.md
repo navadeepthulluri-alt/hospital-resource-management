@@ -1,70 +1,147 @@
+# 🏥 Patient Transfer Graph & Hospital Resource Management System
 
-# 🏥 Patient Transfer Graph & Hospital Resource Management
+## group member name:
+T.Navadeep-CDS/2025/1852
 
-## 📌 Project Title
+B.venkateswara reddy-CDS/2025/1826
 
-Patient Transfer Graph using C (CRUD-Based Hospital Resource Management)
+## 📌 Project Overview
 
-## 👥 Team Members
+This project is a **menu-driven C application** designed to manage hospital resources and simulate patient transfers using structured data handling.
 
-* Member 1
-* Member 2
-* Member 3
+The system allows users to:
 
-## ❗ Problem Statement
+* Add, update, delete hospital records
+* Search and display hospital data
+* Manage hospital resources like available beds
 
-Hospitals often need to manage patient transfers between departments or facilities while tracking resource availability (beds, doctors, etc.).
-This project implements a graph-based system where:
+Although simplified, the system reflects real-world hospital coordination scenarios where efficient data handling is critical.
 
-* Each node represents a hospital/department
-* Edges represent patient transfers between them
+---
 
-The system allows users to perform CRUD operations to manage hospital nodes and visualize connections.
+## 🎯 Objectives
 
-## 🧠 Data Structure Used
+* Implement CRUD operations using C
+* Practice **dynamic memory allocation**
+* Use **structured data (struct)**
+* Build a **modular program with functions**
+* Simulate basic hospital resource tracking
 
-* **Graph (Adjacency List Representation)**
-* Each node contains:
+---
 
-  * Hospital ID
-  * Name
-  * Available Beds
-* Dynamic memory allocation using `malloc()` and `free()`
+## 🧩 Features
 
-## ⚙️ Algorithm Explanation
+* ➕ Add new hospital records
+* 🔍 Search hospital by ID
+* ✏️ Update hospital details
+* ❌ Delete hospital records
+* 📋 Display all hospitals
+* 🧠 Efficient memory usage using `malloc()` and `free()`
 
-1. **Create (Add Node)**
+---
 
-   * Allocate memory dynamically
-   * Insert node into adjacency list
+## 🏗️ System Design
 
-2. **Read (Display)**
+### 📊 Data Structure
 
-   * Traverse all nodes
-   * Display hospital details and connections
+We use a **Linked List** to store hospital records dynamically.
 
-3. **Update**
+Each node contains:
 
-   * Search node by ID
-   * Modify hospital details
+* Hospital ID
+* Hospital Name
+* Available Beds
+* Pointer to next node
 
-4. **Delete**
+```
+[ID | Name | Beds | Next] → [ID | Name | Beds | Next] → NULL
+```
 
-   * Remove node
-   * Free allocated memory
+---
 
-5. **Search**
+## 🔄 CRUD Operations Explained
 
-   * Linear search through node list
+### 1. Create (Add Hospital)
 
-## 💻 Compilation Instructions
+* Allocate memory using `malloc()`
+* Insert new node at the beginning
 
-```bash
+### 2. Read (Display Hospitals)
+
+* Traverse the linked list
+* Print each hospital’s details
+
+### 3. Update
+
+* Search hospital by ID
+* Modify name and bed count
+
+### 4. Delete
+
+* Locate node
+* Adjust pointers
+* Free memory using `free()`
+
+### 5. Search
+
+* Perform linear search on linked list
+
+---
+
+## 🧠 Algorithm (Step-by-Step)
+
+### Add Node
+
+1. Create new node
+2. Input data
+3. Link to head
+4. Update head pointer
+
+### Delete Node
+
+1. Search for node
+2. Track previous node
+3. Update links
+4. Free memory
+
+### Search Node
+
+1. Traverse list
+2. Compare IDs
+3. Return result
+
+---
+
+## 🖥️ Technologies Used
+
+* Language: **C**
+* Compiler: GCC
+* Concepts:
+
+  * Pointers
+  * Dynamic Memory Allocation
+  * Linked Lists
+  * Modular Programming
+
+---
+
+## ▶️ How to Run the Program
+
+### Step 1: Compile
+
+```bash id="c1a2b3"
 gcc hospital_graph.c -o hospital
+```
+
+### Step 2: Execute
+
+```bash id="d4e5f6"
 ./hospital
 ```
 
-## 📊 Sample Output
+---
+
+## 📌 Menu Interface
 
 ```
 1. Add Hospital
@@ -73,17 +150,81 @@ gcc hospital_graph.c -o hospital
 4. Search Hospital
 5. Display Hospitals
 6. Exit
+```
 
+---
+
+## 📊 Sample Execution
+
+```
 Enter choice: 1
-Enter ID: 101
-Enter Name: City Hospital
-Enter Beds: 50
+Enter ID: 201
+Enter Name: Apollo Hospital
+Enter Beds: 100
 Hospital Added Successfully!
 
 Enter choice: 5
-ID: 101 | Name: City Hospital | Beds: 50
+ID: 201 | Name: Apollo Hospital | Beds: 100
 ```
 
-## 🎥 Demo Video Link
+---
 
-(Add your video link here)
+## ⚠️ Limitations
+
+* Uses linked list instead of full graph
+* No file storage (data lost after program ends)
+* No real-time hospital connectivity
+
+---
+
+## 🚀 Future Enhancements
+
+* 🌐 Convert to **Graph (Adjacency List)** for patient transfers
+* 📍 Add shortest path algorithm (Dijkstra)
+* 💾 File handling for permanent storage
+* 🖥️ GUI using C++ / Python
+* 🔐 Authentication system
+
+---
+
+## 🧪 Test Cases
+
+| Input             | Expected Output |
+| ----------------- | --------------- |
+| Add hospital      | Record inserted |
+| Search valid ID   | Hospital found  |
+| Search invalid ID | Not found       |
+| Delete ID         | Record removed  |
+
+---
+
+## 📷 Screenshots
+
+(Add screenshots of your output here)
+
+---
+
+## 🎥 Demo Video
+
+(Add your demo video link here)
+
+---
+
+## 📚 Learning Outcomes
+
+* Understood dynamic memory management
+* Learned linked list operations
+* Implemented CRUD operations
+* Built structured and modular programs
+
+---
+
+## 📜 License
+
+This project is for educational purposes only.
+
+---
+
+## 🙌 Acknowledgement
+
+Guided by faculty and coursework in Data Structures using C.
