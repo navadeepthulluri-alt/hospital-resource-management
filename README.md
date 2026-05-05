@@ -200,7 +200,18 @@ ID: 201 | Name: Apollo Hospital | Beds: 100
 
 ## 📷 Screenshots
 
-(Add screenshots of your output here)
+<img width="396" height="285" alt="image" src="https://github.com/user-attachments/assets/b7adcb20-2f36-4fb5-9737-266fcc631e75" />
+<img width="448" height="237" alt="image" src="https://github.com/user-attachments/assets/3711d149-3e95-454c-8728-90b6935d13ce" />
+<img width="415" height="248" alt="image" src="https://github.com/user-attachments/assets/a7725d1c-a065-4c23-8ace-66bdf0a1bcaf" />
+<img width="518" height="228" alt="image" src="https://github.com/user-attachments/assets/240141e9-0144-4b2b-a352-3b21e82c152b" />
+<img width="428" height="243" alt="image" src="https://github.com/user-attachments/assets/1d429db7-c338-44fa-b0d3-f94790f321b7" />
+<img width="419" height="217" alt="image" src="https://github.com/user-attachments/assets/4dfae1a1-5831-420c-9c05-a24912fec9e7" />
+
+
+
+
+
+
 
 ---
 
