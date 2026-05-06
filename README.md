@@ -217,7 +217,7 @@ ID: 201 | Name: Apollo Hospital | Beds: 100
 
 ## 🎥 Demo Video
 
-(Add your demo video link here)
+https://drive.google.com/file/d/1PNoOrSRp3nTb_bdBXzh6tiJ_T47dfNnO/view?usp=sharing
 
 ---
 
